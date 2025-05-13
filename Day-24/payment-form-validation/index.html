@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Payment form</h2>
+
+    <form id="paymentForm">
+        <label for="">Card number</label>
+        <input type="text" id="cardnumber"><br>
+        <div class="error" id="cardError"></div>
+
+        <label for="">CVV</label>
+        <input type="text" id="cvv"><br>
+        <div class="error" id="cvvError"></div>
+
+        <label for="">Expiry date</label>
+        <input type="text" id="expirydate"><br>
+        <div class="error" id="expiryError"></div>
+
+        <button type="submit">Pay now</button>
+    </form>
+    <div id="paymentSuccess"></div>
+
+</body>
+</html>

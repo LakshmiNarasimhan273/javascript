@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        .error{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Login Form</h2>
+
+    <form id="loginForm">
+        <label for="">Enter your username</label>
+        <input type="text" id="email"><br>
+        <div class="error" id="emailError"></div>
+
+        <label for="">Enter your password</label>
+        <input type="text" id="password"><br>
+        <div class="error" id="passwordError"></div>
+
+        <button type="submit">Login</button>
+    </form>
+    <div id="loginOutput"></div>
+    
+</body>
+</html>
