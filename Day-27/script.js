@@ -1,44 +1,44 @@
 // Callback hell
 
-// console.log(1);
+console.log(1);
 
-// function run(){
-//     console.log(2);
-// }
-// console.log(3);
-// run();
+function run(){
+    console.log(2);
+}
+console.log(3);
+run();
 
 // setTimeout
 
-// setTimeout(() => {
-//     console.log("Function running");
-// }, 5000);
+setTimeout(() => {
+    console.log("Function running");
+}, 5000);
 
 // First console without any time delay
-// console.log(1);
+console.log(1);
 
 // setTimeout function with 4 seconds delay time
 // so that arrow function will return the output
 // after the time delay is done
-// setTimeout(() => {
-//     console.log(2);
-// }, 4000);
+setTimeout(() => {
+    console.log(2);
+}, 4000);
 
 // Last console without any time delay
-// console.log(3);
+console.log(3);
 
-// console.log("Process start");
+console.log("Process start");
 
 // This small piece of code takes 24 function 
 // memory to execute this example
-// setTimeout(() => {
-//     console.log("Step - 1");
+setTimeout(() => {
+    console.log("Step - 1");
 
-//     setTimeout(() => {
-//         console.log("Step - 2");
-//     }, 2000)
+    setTimeout(() => {
+        console.log("Step - 2");
+    }, 2000)
     
-// }, 1000)
+}, 1000)
 
 // Promises
 
