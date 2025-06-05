@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c1c2c3;
+}
+
+.container ul{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
