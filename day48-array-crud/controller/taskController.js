@@ -2,7 +2,7 @@ const tasksModel = require("../model/taskModel");
 
 // GET ALL API
 const getalltask = (req, res) => {
-    res.status(200).json(tasksModel);
+    res.status(200).json(tasksModel); // 200 - Success
 }
 
 // GET BY ID
@@ -13,9 +13,9 @@ const gettaskbyId = (req, res) => {
     const task = tasksModel.find(data => data.id === id);
 
     if(task){
-        res.status(200).json(task);
+        res.status(200).json(task); // 200 - Success
     }else{
-        res.status(404).json({message: "Task not found"});
+        res.status(404).json({message: "Task not found"}); // 404 - Not Found
     }
 }
 
@@ -24,7 +24,7 @@ const createTask = (req, res) => {
     const {title, description, status} = req.body;
 
     if(!title || !description || !status){
-        return res.status(400).json({message: "All fields are required"});
+        return res.status(400).json({message: "All fields are required"}); // 400 - Bad Request
     }
 
     const newTask = {
@@ -34,7 +34,7 @@ const createTask = (req, res) => {
         status
     }
     tasksModel.push(newTask);
-    res.status(201).json({message: "Task created", newTask});
+    res.status(201).json({message: "Task created", newTask}); // 201 - Created
 }
 
 // EDIT(UPDATE)
